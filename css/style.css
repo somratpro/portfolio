@@ -457,6 +457,35 @@ input:checked + label span:last-child {
 .occupation {
   font-size: 18px;
   font-weight: 400;
+  height: 30px;
+  overflow: hidden;
+}
+
+.occupation span {
+  display: inline-block;
+  color: #fff;
+  position: relative;
+  white-space: nowrap;
+  text-transform: uppercase;
+  font-size: 22px;
+  text-align: center;
+  top: 0;
+  left: 0;
+  -webkit-animation: move 4s;
+  -webkit-animation-iteration-count: infinite;
+  -webkit-animation-delay: 1s;
+}
+
+@keyframes move {
+  0% {
+    top: 0px;
+  }
+  33% {
+    top: -30px;
+  }
+  67% {
+    top: -60px;
+  }
 }
 
 .fulscreen-nav {
@@ -838,16 +867,6 @@ input:checked + label span:last-child {
 .about-me {
   background: #fff;
   padding: 125px 0px 70px 0px;
-}
-
-.about-me-text {
-  height: 30.4vw;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-align: center;
-  -ms-flex-align: center;
-  align-items: center;
 }
 
 .about-me-text h1 {
